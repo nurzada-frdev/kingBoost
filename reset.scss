@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+button:hover{
+  background: #5030CE;
+  transition: 1s;
+  transform: scale(1.1);
+}
+body{
+  background: #080808;
+  //font-family: 'Proxima Nova',sans-serif;
+  font-family: 'Open Sans',sans-serif;
+}
+
+@mixin between{
+  display: flex;
+  justify-content: space-between;
+}
+@mixin around{
+  display: flex;
+  justify-content: space-around;
+}
+@mixin center{
+  display: flex;
+  justify-content: center;
+}
+@mixin alignCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+button{
+  border: none;
+}
+@mixin hover{
+  transition: 2s;
+  transform: scale(1.1);
+}
+@mixin column{
+  display: flex;
+  flex-direction: column;
+}

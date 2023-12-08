@@ -1,0 +1,494 @@
+@import "reset";
+
+#header {
+  background: #212121;
+  padding: 20px 0;
+
+  .header {
+    //ion-icon:nth-child(3){
+    //  background: #6302D8;
+    //}
+    ion-icon {
+      background: #212121;
+      border: 1px solid #313132;
+      color: #636872;
+      box-shadow: 0 4px 27px rgba(0, 0, 0, 0.49);
+      border-radius: 10px;
+      font-size: 35px;
+    }
+
+    h1 {
+      margin: 0 10px;
+      color: white;
+    }
+
+    &--logo {
+
+      @include alignCenter;
+    }
+
+    &--select {
+      &__purple {
+        background: linear-gradient(90deg, #6302D8 10.53%, #5030CE 95.39%);
+        transform: rotate(90deg);
+        width: 30px;
+        height: 30px;
+        clip-path: polygon(100% 100%, 0% 100%, 99% 0);
+        position: absolute;
+        left: 18.4%;
+        top: 37px;
+      }
+
+      h2 {
+        color: #ABABB2;
+      }
+
+      @include alignCenter;
+      background: #2F2F2F;
+      border-radius: 8px;
+      padding: 10px 20px;
+
+      select {
+        background: none;
+        color: white;
+        border: #2F2F2F;
+      }
+    }
+
+    a {
+      margin: 0 10px;
+    }
+
+    @include between;
+    align-items: center;
+
+    &--frame {
+      &__one {
+        &--wand {
+          width: 40px;
+
+          border: 1px solid #313132;
+          transform: rotate(90deg);
+        }
+
+        img {
+          width: 25px;
+          margin: 0 10px;
+        }
+
+        select {
+          color: #A5A9B4;
+          font-weight: 700;
+          font-size: 14px;
+          background: none;
+          border: none;
+        }
+
+        border: 1px solid #313132;
+        border-radius: 22px;
+        padding: 13px 15px;
+        @include alignCenter;
+      }
+
+      @include alignCenter;
+      justify-content: space-between;
+
+      ion-icon {
+        font-size: 25px;
+        color: white;
+      }
+
+      ion-icon:nth-child(1) {
+        color: white;
+      }
+
+      ion-icon:nth-child(3) {
+        background: #7A59FF;
+        border-radius: 6px;
+      }
+
+
+    }
+
+    button {
+      background: linear-gradient(90deg, #6302D8 10.53%, #5030CE 95.39%);
+      border-radius: 999px;
+      padding: 14px 20px;
+      font-weight: 700;
+      color: white;
+    }
+
+    button:hover {
+      background: #6302D8;
+      transition: 2s;
+
+    }
+  }
+}
+
+#hero {
+  background: #080808;
+  padding: 0 0 45px 0;
+
+  .hero {
+    &--three {
+      @include between;
+      &__box:hover{
+        background: #6302D8;
+        transition: 1s;
+        transform: scale(1.1);
+      }
+      &__box {
+        z-index: 99;
+        //ion-icon:nth-child(4){
+        // background:  linear-gradient(360deg, #67ABDC 4.75%, #5572CC 51.9%, #2D46A7 98.12%), linear-gradient(180deg, #CF0C4B 8.39%, #F74757 99.99%);
+        //}
+
+        ion-icon {
+          margin-bottom: 10px;
+          font-size: 40px;
+        }
+
+        h4 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          color: #A5A9B4;
+        }
+
+        flex-direction: column;
+        padding: 42px 30px;
+        width: 400px;
+        height: 150px;
+        //padding: 50px 30px;
+        background: #212121;
+        margin: 0 15px;
+        box-shadow: 0 33px 104px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        color: white;
+      }
+    }
+
+    &--box {
+      background: #212121;
+      box-shadow: 0px 33px 104px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+    }
+
+    &--two {
+      img {
+        position: absolute;
+        top: 17%;
+        left: 51%;
+        width: 41%;
+      }
+    }
+
+    //@include alignCenter;
+    justify-content: space-between;
+
+    &--one {
+      color: white;
+      &__first {
+        @include alignCenter;
+        margin-bottom: 50px;
+        justify-content: stretch;
+      }
+
+      padding: 40px 0;
+
+      span {
+        color: #636872;
+      }
+
+      button:nth-child(2) {
+        background: #212121;
+        backdrop-filter: blur(4.5px);
+        padding: 7px 8px;
+        border-radius: 8px;
+        color: #A5A9B4;
+      }
+
+      h3 {
+        font-size: 20px;
+        color: #F6F2FF;
+      }
+
+      p {
+        line-height: 22px;
+        color: #A5A9B4;
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+
+      h1 {
+        line-height: 70px;
+        padding: 20px 0;
+        font-size: 63px;
+        color: #F6F8FA;
+      }
+
+      button:nth-child(5) {
+        background: linear-gradient(90deg, #6302D8 10.53%, #5030CE 95.39%);
+        border-radius: 999px;
+        color: white;
+        padding: 15px 40px;
+      }
+    }
+  }
+}
+
+#levels {
+  padding: 60px 0;
+  background: #1C1C1C;
+
+  .levels {
+    &--txt {
+      @include alignCenter;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+
+      h4 {
+        font-size: 20px;
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+    }
+
+    color: white;
+
+    p {
+      color: #A5A9B4;
+    }
+
+    &--between {
+
+      span {
+        background: #7A59FF;
+        border: 1px solid #F6F8FA;
+        box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+        border-radius: 41px;
+        font-size: 20px;
+      }
+
+      p {
+        line-height: 23px;
+        padding: 20px 49px;
+      }
+
+      padding: 40px 0;
+      @include alignCenter;
+      justify-content: center;
+      text-align: center;
+
+      &__box {
+        &--white {
+          //width: 93px;
+          border: 1px solid #313132;
+          transform: rotate(-1deg);
+          height: 110px;
+        }
+
+        margin: 0 30px;
+        @include between;
+      }
+    }
+  }
+}
+
+#gold {
+  padding: 10% 0 30px 0;
+  background: #080808;
+
+  .gold {
+    &--one {
+      @include around;
+
+      h1 {
+        margin-bottom: 15px;
+        font-size: 30px;
+      }
+
+      p {
+        color: #A5A9B4;
+        line-height: 23px;
+        letter-spacing: 1px;
+      }
+    }
+
+    color: white;
+
+    &--gray {
+      flex-direction: column;
+      padding: 0 30px;
+      @include center;
+      width: 1300px;
+      height: 406px;
+      background: #212121;
+      box-shadow: 0 33px 104px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+
+      &__first {
+        p {
+          color: #A5A9B4;
+          padding: 6px 0 20px 0;
+
+
+        }
+
+
+      }
+
+      &__second {
+        padding: 10px 0 10px 0;
+        @include between;
+
+        h3 {
+          color: #A5A9B4;
+          font-weight: 400;
+        }
+
+        span {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 40px;
+        }
+      }
+
+      &__wand {
+
+        width: 1300px;
+        border: 1px solid #313132;
+      }
+
+      &__three {
+        @include between;
+        padding: 41px 0;
+      }
+    }
+  }
+}
+
+#faq {
+  padding: 60px 0;
+  background: #080808;
+
+  .faq {
+    h4 {
+      line-height: 30px;
+      color: #F6F2FF;
+    }
+
+    h1 {
+      color: #F6F8FA;
+      font-size: 35px;
+    }
+
+    @include center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+
+    &--inform {
+      align-items: center;
+      padding: 40px 0;
+      text-align: center;
+      @include center;
+      flex-direction: column;
+
+      &__one {
+        margin-bottom: 10px;
+
+        h2 {
+          display: flex;
+          text-align: center;
+          padding: 16px 17px;
+          font-weight: 500;
+        }
+
+        width: 736px;
+        height: 64px;
+
+        background: #212121;
+        box-shadow: 0 33px 104px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+      }
+
+    }
+  }
+}
+
+#footer {
+  background: #232324;
+  border-radius: 32px 32px 0 0;
+
+  .footer {
+    padding: 3px 0;
+
+    &--one {
+      h3 {
+        padding: 14px 0 15px 0;
+        color: #A5A9B4;
+        @include center;
+      }
+
+      border-bottom: 1px solid #313132;
+    }
+
+    &--two {
+      padding: 13px 0 13px 0;
+      @include between;
+      border-bottom: 1px solid #313132;
+
+      img {
+        width: 105px;
+      }
+    }
+
+    &--three {
+      padding: 20px 0 30px 0;
+      color: #F6F2FF;
+      @include between;
+      border-bottom: 1px solid #313132;
+
+
+      h1 {
+        color: #F6F8FA;
+        margin-bottom: 12px;
+      }
+
+      p {
+        color: #A5A9B4;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: #A5A9B4;
+      }
+    }
+
+    &--four {
+      padding: 15px 0 15px 0;
+      @include between;
+      color: #F6F2FF;
+      p{
+        color: #A5A9B4;
+        font-weight: 500;
+      }
+      ion-icon{
+        color: white;
+        font-size: 30px;
+        margin: 0 10px;
+      }
+      h4{
+        color: #A5A9B4;
+      }
+    }
+  }
+}
